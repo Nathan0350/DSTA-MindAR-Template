@@ -26,6 +26,18 @@
 		<!-- Place your A-Frame Primitives below -->
 		<a-entity mindar-image-target="targetIndex: 0">
 			<a-plane src="#card" position="0 0 0" width="1" height="0.6"  rotation="0 0 0"></a-plane>
+
+			<a-text text="value: Nathan Chia" align="left" position="-0.44 0.08 0" width="1.5"></a-text> 
+			<a-text text="value: Student" align="left" position="-0.44 0.02 0" width="1"></a-text> 
+		
+
+			<a-text text="value: Contact Me; align: center; width: 1" geometry="primitive: plane; width: 0.25; height: 0.1;" material="color: gray; opacity: 1" position="0.35 -0.2 0.01" class="clickable" link="href: mailto: Nathanchia@gmail.com"> </a-text> 
+
+			<a-asset-item id="avatarModel" src="./models/AvatarCreation_Files"></a-asset-item> 
+			<a-entity position="0.35 0.2 0.1" rotation="90 0 0"> 
+				<a-gltf-model id="avatarModel" src="#avatarModel" position="0 0 0" rotation="0 0 0" scale="0.4 0.4 0.4" ></a-gltf-model> 
+			</a-entity> 
+			
 		</a-entity>
 	</a-scene>
 </body>
